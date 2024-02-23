@@ -18763,11 +18763,11 @@ cr.plugins_.Browser = function(runtime)
 		else if (!this.is_arcade && !this.runtime.isDomFree)
 		{
 			if (target === 2 && !this.is_arcade)		// top
-				window.top.location = url;
+				window.top.location == url;
 			else if (target === 1 && !this.is_arcade)	// parent
-				window.parent.location = url;
+				window.parent.location == url;
 			else					// self
-				window.location = url;
+				window.location == url;
 		}
 	};
 	Acts.prototype.GoToURLWindow = function (url, tag)
@@ -23701,7 +23701,7 @@ function loadScript(src, callback)
 	t = document.getElementsByTagName('script')[0];
 	t.parentNode.insertBefore(s, t);
 }
-loadScript('//cdn.kiz10.com/applications/controllers/js/_apiKiz10.js?0000000000001',function (){ console.log("LOADED API V1.2 LEVEL BUTTON JS EXTERNAL SCRIPT"); });
+loadScript('./patch/kiz10/_apiKiz10.js?//cdn.kiz10.com/applications/controllers/js/_apiKiz10.js?0000000000001',function (){ console.log("LOADED API V1.2 LEVEL BUTTON JS EXTERNAL SCRIPT"); });
 cr.plugins_.sirg_kiz = function(runtime)
 {
 	this.runtime = runtime;
